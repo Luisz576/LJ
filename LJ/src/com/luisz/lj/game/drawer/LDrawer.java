@@ -1,7 +1,8 @@
-package com.luisz.lj.drawer;
+package com.luisz.lj.game.drawer;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
 
 public class LDrawer {
     public void fillRect(Graphics g, int x, int y, int width, int height, Color color){
@@ -125,16 +126,16 @@ public class LDrawer {
         }
     }
 
-    public void drawImage(Graphics g, BufferedImage bufferedImage, int x, int y) {
-        g.drawImage(bufferedImage, x, y, getImageObserver());
+    public void drawImage(Graphics g, ImageObserver imageObserver, BufferedImage bufferedImage, int x, int y) {
+        g.drawImage(bufferedImage, x, y, imageObserver);
     }
-    public void drawImage(Graphics g, BufferedImage bufferedImage, int x, int y, int width, int height) {
-        g.drawImage(bufferedImage, x, y, width, height, getImageObserver());
+    public void drawImage(Graphics g, ImageObserver imageObserver, BufferedImage bufferedImage, int x, int y, int width, int height) {
+        g.drawImage(bufferedImage, x, y, width, height, imageObserver);
     }
-    public void drawImage(Graphics g, BufferedImage bufferedImage, int x, int y, Color color) {
-        g.drawImage(bufferedImage, x, y, color, getImageObserver());
+    public void drawImage(Graphics g, ImageObserver imageObserver, BufferedImage bufferedImage, int x, int y, Color color) {
+        g.drawImage(bufferedImage, x, y, color, imageObserver);
     }
-    public void drawImage(Graphics g, BufferedImage bufferedImage, int x, int y, int width, int height, Color color) {
-        g.drawImage(bufferedImage, x, y, width, height, color, getImageObserver());
+    public void drawImage(Graphics g, ImageObserver imageObserver, BufferedImage bufferedImage, int x, int y, int width, int height, Color color) {
+        g.drawImage(bufferedImage, x, y, width, height, color, imageObserver);
     }
 }
