@@ -6,7 +6,7 @@ import com.luisz.lj.game.drawer.LDrawer;
 import javax.swing.*;
 import java.awt.*;
 
-public abstract class LGame implements Runnable{
+public abstract class LGame implements Runnable {
     public final int fps;
     private final double intervalTime;
     private final JFrame window;
