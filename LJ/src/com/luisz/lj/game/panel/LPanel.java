@@ -33,7 +33,7 @@ public class LPanel extends JPanel {
         super.paintComponents(g);
 
         for(int i = 0; i < renders.size(); i++){
-            renders.get(i).render();
+            renders.get(i).render(g);
         }
 
         g.dispose();

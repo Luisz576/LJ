@@ -1,4 +1,4 @@
-package com.luisz.lj.utils.math;
+package com.luisz.lj.utils.math.tuple;
 
 public class Tuple<A, B> {
     public A a;

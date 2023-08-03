@@ -4,6 +4,8 @@ import com.luisz.lj.game.LGame;
 import com.luisz.lj.game.component.renderer.IRender;
 import com.luisz.lj.game.component.updater.IUpdater;
 
+import java.awt.*;
+
 public abstract class LComponent implements IUpdater, IRender {
     protected final LGame game;
     public LComponent(LGame game){
@@ -13,5 +15,5 @@ public abstract class LComponent implements IUpdater, IRender {
     @Override
     public void update(){}
     @Override
-    public void render(){}
+    public void render(Graphics g){}
 }
