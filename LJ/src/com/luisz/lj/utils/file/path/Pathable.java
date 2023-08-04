@@ -1,4 +1,4 @@
-package com.luisz.lj.utils.path;
+package com.luisz.lj.utils.file.path;
 
 import java.awt.*;
 import java.io.File;

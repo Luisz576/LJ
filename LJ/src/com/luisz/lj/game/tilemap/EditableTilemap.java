@@ -14,15 +14,15 @@ public class EditableTilemap extends Tilemap{
         super(resolution, tiles);
     }
 
-    public void addTile(Tile tile) {
+    public final void addTile(Tile tile) {
         this.tiles.add(tile);
     }
 
-    public void addTiles(Collection<Tile> tiles) {
+    public final void addTiles(Collection<Tile> tiles) {
         this.tiles.addAll(tiles);
     }
 
-    public boolean removeTile(Integer index) {
+    public final boolean removeTile(Integer index) {
         return this.tiles.remove(index.intValue()) != null;
     }
 }

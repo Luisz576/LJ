@@ -12,4 +12,8 @@ public class Vector2D {
     public final Vector2D createNew(){
         return new Vector2D(this.x, this.y);
     }
+
+    public static Vector2D zero(){
+        return new Vector2D(0, 0);
+    }
 }
